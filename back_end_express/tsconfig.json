@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "module": "esnext",               // Use ES modules
+    "target": "esnext",               // Target latest ECMAScript version
+    "outDir": "./dist",               // Output directory for compiled files
+    "allowSyntheticDefaultImports": true,   // For default import syntax compatibility
+    "esModuleInterop": true,          // Interoperability between ES modules and CommonJS
+    "allowImportingTsExtensions": true,   // Disable importing .ts extensions (avoid errors)
+    "noEmit": true,                   // Don't emit output (use ts-node to run directly)
+    "sourceMap": true,                // Enable source maps
+    "declaration": false,              // Generate .d.ts files
+    "declarationMap": false,           // Enable declaration map
+    "strict": true,                   // Enable strict type checking
+    "jsx": "react-jsx",               // JSX transform
+    "isolatedModules": true,          // For better module isolation
+    "skipLibCheck": true,             // Skip library type checking
+    "moduleResolution": "bundler",       // Use Node.js-style module resolution
+    "moduleDetection": "force",       // Force module detection
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noUncheckedSideEffectImports": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
